@@ -1,0 +1,13 @@
+{
+    "manifest_version":3,
+    "name":"reading-time",
+    "version" : "0.0.0.1",
+    "description":"Calculate reading time of every webpage",
+    "content_scripts":[
+        {
+            "js":["scripts/content.js"],
+            "matches": ["<all_urls>"],
+            "all_frames": true
+        }
+    ]
+}
